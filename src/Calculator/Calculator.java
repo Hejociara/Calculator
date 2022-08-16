@@ -3,7 +3,7 @@ package Calculator;
 import java.util.Scanner;
 
 public class Calculator {
-    public static void Calculator(String[] args) {
+    public Calculator(String[] args) {
         Scanner scan = new Scanner(System.in);
         int x,y;
 
@@ -33,5 +33,6 @@ public class Calculator {
     }
     public static int division (int x, int y){
         return x / y;
+
     }
 }
