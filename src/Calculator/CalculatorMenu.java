@@ -3,14 +3,13 @@ package Calculator;
 import java.util.Scanner;
 
 /**
- * @author : Hejociara de Nazaré do Vale
+ * @author : Hejociara do Vale
  * Date: 24/01/2022
  *Since: 1.0
  */
 public class CalculatorMenu {
     public static void main(String[] args) {
-
-        Scanner menu = new Scanner(System.in);
+           Scanner menu = new Scanner(System.in);
 
             System.out.println("         Welcome to calculator       ");
             System.out.println("Please, insert an option: ");
@@ -20,6 +19,7 @@ public class CalculatorMenu {
             System.out.println("4 - Exit");
 
             int option = menu.nextInt();
+            Calculator calc = new Calculator();
 
             switch (option) {
                 case 1:

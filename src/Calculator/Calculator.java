@@ -3,7 +3,7 @@ package Calculator;
 import java.util.Scanner;
 
 public class Calculator {
-    public Calculator(String[] args) {
+    public Calculator() {
         Scanner scan = new Scanner(System.in);
         int x,y;
 
@@ -12,14 +12,16 @@ public class Calculator {
         System.out.println("Type the second value: ");
         y = scan.nextInt();
 
-        int addition = addition (x,y);
-        System.out.println("addition: " + addition);
-        int subtraction = subtraction (x,y);
-        System.out.println("sub: " + subtraction);
-         int multiplication = multiplication (x,y);
-        System.out.println("mult: " + multiplication);
-         int division = division (x,y);
-        System.out.println("division: " + subtraction);
+
+            int addition = addition(x, y);
+            System.out.println("addition: " + addition);
+            int subtraction = subtraction(x, y);
+            System.out.println("sub: " + subtraction);
+            int multiplication = multiplication(x, y);
+            System.out.println("mult: " + multiplication);
+            int division = division(x, y);
+            System.out.println("division: " + subtraction);
+
 
     }
     public static int addition (int x, int y){
