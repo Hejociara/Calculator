@@ -4,37 +4,24 @@ import java.util.Scanner;
 
 public class Calculator {
     public Calculator() {
-        Scanner scan = new Scanner(System.in);
-        int x,y;
+        Scanner input2 = new Scanner(System.in);
 
         System.out.println("Type the first value: ");
-        x = scan.nextInt();
+        int x = input2.nextInt();
+        input2.nextLine();
         System.out.println("Type the second value: ");
-        y = scan.nextInt();
+        int y = input2.nextInt();
 
+        int addition = (x + y);
+        System.out.println("addition: " + addition);
+        int subtraccion = (x-y);
+        System.out.println("addition: " + subtraccion);
+        int multiplication = (x*y);
+        System.out.println("multiplication: " + multiplication);
+        int division = (x/y);
+        System.out.println("division: " + division);
 
-            int addition = addition(x, y);
-            System.out.println("addition: " + addition);
-            int subtraction = subtraction(x, y);
-            System.out.println("sub: " + subtraction);
-            int multiplication = multiplication(x, y);
-            System.out.println("mult: " + multiplication);
-            int division = division(x, y);
-            System.out.println("division: " + subtraction);
-
-
-    }
-    public static int addition (int x, int y){
-        return x + y;
-    }
-    public static int subtraction (int x, int y){
-        return x - y;
-    }
-    public static int multiplication (int x, int y){
-        return x * y;
-    }
-    public static int division (int x, int y){
-        return x / y;
+        input2.close();
 
     }
 }
