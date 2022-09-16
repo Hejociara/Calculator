@@ -18,8 +18,7 @@ public class CalculatorMenu {
             System.out.println("3 - Area calculator ");
             System.out.println("4 - Exit");
 
-            int option = menu.nextInt();
-            Calculator calc = new Calculator();
+            var option = menu.nextInt();
 
             switch (option) {
                 case 1:
